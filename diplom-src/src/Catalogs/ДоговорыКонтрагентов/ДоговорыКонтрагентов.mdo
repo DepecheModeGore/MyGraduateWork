@@ -157,7 +157,7 @@
     <name>ВКМ_ДатаНачала</name>
     <synonym>
       <key>ru</key>
-      <value>ВКМ дата начала</value>
+      <value>Период с</value>
     </synonym>
     <type>
       <types>Date</types>
@@ -175,7 +175,7 @@
     <name>ВКМ_ДатаОкончания</name>
     <synonym>
       <key>ru</key>
-      <value>ВКМ дата окончания</value>
+      <value>по</value>
     </synonym>
     <type>
       <types>Date</types>
