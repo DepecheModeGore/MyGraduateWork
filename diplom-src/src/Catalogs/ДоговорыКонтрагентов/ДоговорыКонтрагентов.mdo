@@ -193,7 +193,7 @@
     <name>ВКМ_АбонентскаяПлата</name>
     <synonym>
       <key>ru</key>
-      <value>ВКМ абонентская плата</value>
+      <value>Абонентская плата</value>
     </synonym>
     <type>
       <types>Number</types>
@@ -212,7 +212,7 @@
     <name>ВКМ_СтоимостьЧасаРаботы</name>
     <synonym>
       <key>ru</key>
-      <value>ВКМ стоимость часа работы</value>
+      <value>Стоимость часа работы</value>
     </synonym>
     <type>
       <types>Number</types>
