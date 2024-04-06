@@ -10,4 +10,5 @@
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.ДобавитьЭлементНастроек</picture>
   </picture>
+  <content>Catalog.ВКМ_ОбслуживаниеКлиентаПрисоединенныеФайлы</content>
 </mdclass:Subsystem>
