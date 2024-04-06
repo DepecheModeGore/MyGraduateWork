@@ -12,4 +12,5 @@
   </picture>
   <content>Catalog.ВКМ_ОбслуживаниеКлиентаПрисоединенныеФайлы</content>
   <content>Role.ВКМ_РаботаСДокументом_ВКМ_ОбслуживаниеКлиента</content>
+  <content>DataProcessor.ВКМ_ПроведениеПоРН</content>
 </mdclass:Subsystem>
