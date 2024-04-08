@@ -13,4 +13,6 @@
   <content>Catalog.ВКМ_ОбслуживаниеКлиентаПрисоединенныеФайлы</content>
   <content>Role.ВКМ_РаботаСДокументом_ВКМ_ОбслуживаниеКлиента</content>
   <content>DataProcessor.ВКМ_ПроведениеПоРН</content>
+  <content>Constant.ВКМ_НоменклатураАбонентскаяПлата</content>
+  <content>Constant.ВКМ_НоменклатураРаботыСпециалиста</content>
 </mdclass:Subsystem>
