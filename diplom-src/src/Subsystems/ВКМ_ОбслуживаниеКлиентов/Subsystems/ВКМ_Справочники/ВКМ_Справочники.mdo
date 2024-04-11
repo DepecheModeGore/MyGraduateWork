@@ -3,7 +3,7 @@
   <name>ВКМ_Справочники</name>
   <synonym>
     <key>ru</key>
-    <value>ВКМ справочники</value>
+    <value>Справочники</value>
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>

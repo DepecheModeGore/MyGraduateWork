@@ -3,7 +3,7 @@
   <name>ВКМ_Документы</name>
   <synonym>
     <key>ru</key>
-    <value>ВКМ документы</value>
+    <value>Документы</value>
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>

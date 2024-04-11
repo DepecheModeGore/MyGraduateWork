@@ -10,9 +10,9 @@
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.ВКМ_ИконкаОбслуживанияКлиентов</picture>
   </picture>
-  <content>DataProcessor.ВКМ_ПроведениеПоРН</content>
   <content>Constant.ВКМ_НоменклатураАбонентскаяПлата</content>
   <content>Constant.ВКМ_НоменклатураРаботыСпециалиста</content>
   <subsystems>ВКМ_Справочники</subsystems>
   <subsystems>ВКМ_Документы</subsystems>
+  <subsystems>ВКМ_Обработки</subsystems>
 </mdclass:Subsystem>
