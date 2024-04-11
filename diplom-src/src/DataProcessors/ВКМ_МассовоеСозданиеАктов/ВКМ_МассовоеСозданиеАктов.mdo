@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="026fdbb6-00d9-46f6-97b4-5181f1087dad">
+  <producedTypes>
+    <objectType typeId="3354ccbf-9853-47c4-b80f-eb956732666c" valueTypeId="e387bf49-bc1b-4e74-97d5-52d11baf81f5"/>
+    <managerType typeId="1cedd852-8739-42ea-9943-4625064085ed" valueTypeId="506bdbef-8597-4728-9e1f-ba04bb2df142"/>
+  </producedTypes>
+  <name>ВКМ_МассовоеСозданиеАктов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Массовое создание актов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВКМ_МассовоеСозданиеАктов.Form.Форма</defaultForm>
+  <attributes uuid="b845623b-9ee5-429e-9310-3344370de07c">
+    <name>ПериодОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период обработки</value>
+    </synonym>
+    <type>
+      <types>StandardPeriod</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="8a502e46-f50a-43a4-b8df-bd45fa12cd26">
+    <producedTypes>
+      <objectType typeId="5283b967-c05c-47c5-bd2d-8099aae8f77c" valueTypeId="fcd9ec2c-886e-4e51-8794-d6ce1b813fa3"/>
+      <rowType typeId="ad516873-533c-4a37-8018-0b7de8a831d2" valueTypeId="a911b30c-91f5-48ca-a63c-880cbbacfbb0"/>
+    </producedTypes>
+    <name>СписокДокументов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список документов</value>
+    </synonym>
+    <attributes uuid="dc9de593-4bb0-4f36-92fb-1da78cd8d7ec">
+      <name>Договор</name>
+      <synonym>
+        <key>ru</key>
+        <value>Договор</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ДоговорыКонтрагентов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="6ce5db67-4a92-4d82-a8ad-9b8f80b96b40">
+      <name>ДокументРеализации</name>
+      <synonym>
+        <key>ru</key>
+        <value>Документ реализации</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.РеализацияТоваровУслуг</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="5ed6b9a3-2c41-4462-9a6b-37e87ccacc85">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>
