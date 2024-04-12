@@ -19,4 +19,5 @@
   <content>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы</content>
   <content>Constant.ВКМ_ТокенУправленияТелеграмБотом</content>
   <content>Constant.ВКМ_ИдентификаторГруппыДляОповещения</content>
+  <content>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</content>
 </mdclass:Subsystem>

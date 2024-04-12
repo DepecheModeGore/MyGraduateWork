@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCalculationTypes xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ca556ded-8449-40a0-ac9b-1d9c3d164541">
+  <producedTypes>
+    <objectType typeId="7088b2a0-17a3-486f-bdaf-43f74b571caf" valueTypeId="20ae0c16-5ac7-48fc-88fd-299cc0213e6f"/>
+    <refType typeId="9ef9afb0-85ff-4cdf-b307-905b1f74154b" valueTypeId="4318cfd2-bc67-40d7-b6a4-cfd4628292f3"/>
+    <selectionType typeId="6b83731e-0040-4961-9fdc-6cdafa093444" valueTypeId="7900ef5d-632d-48e2-b30d-f842893c8b97"/>
+    <listType typeId="7410c6da-79d7-486e-880a-490b85da44d0" valueTypeId="606a4989-9bbf-4c69-99de-a8045ab0b416"/>
+    <managerType typeId="c6713d9e-3106-4508-93ce-83ddcdfc8140" valueTypeId="3536076e-76ee-43a4-b823-bdcc66be9987"/>
+    <displacingCalculationTypesType typeId="f53f5745-2b61-457d-80e7-20d627d3932e" valueTypeId="646ee090-32aa-4bd9-ba0e-d52508561239"/>
+    <displacingCalculationTypesRowType typeId="b7e6821d-bb84-44b3-b593-f4aab7ca407e" valueTypeId="0cd21ad5-74e4-4a06-bb59-94cafbdeeb94"/>
+    <baseCalculationTypesType typeId="8603e2b1-6680-467f-a3d6-4ded1fb441fd" valueTypeId="0e6d1242-5c70-491d-b3ac-a392c9778a1a"/>
+    <baseCalculationTypesRowType typeId="01b0a5cf-84f7-4cd9-9496-bb691cdc3d4a" valueTypeId="27efb1f0-1414-480e-ba62-e0fc3cf7a93b"/>
+    <leadingCalculationTypesType typeId="666efd3c-cd3c-4ec8-a2c3-1f924d617fd5" valueTypeId="8be14c8e-fec9-4ba2-a8c8-a446de40f693"/>
+    <leadingCalculationTypesRowType typeId="1b669840-27c8-4cec-9ba9-9e21bb792158" valueTypeId="e18c0dbd-0716-46a7-af11-9403ba9b6d2e"/>
+  </producedTypes>
+  <name>ВКМ_Удержания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удержания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCalculationTypes.ВКМ_Удержания.StandardAttribute.Code</inputByString>
+  <inputByString>ChartOfCalculationTypes.ВКМ_Удержания.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>9</codeLength>
+  <descriptionLength>40</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <actionPeriodUse>true</actionPeriodUse>
+</mdclass:ChartOfCalculationTypes>
