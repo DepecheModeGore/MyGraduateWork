@@ -23,4 +23,6 @@
   <content>Catalog.ВКМ_ГрафикиРаботы</content>
   <content>InformationRegister.ВКМ_ГрафикиРаботы</content>
   <content>DataProcessor.ВКМ_ЗаполнениеГрафика</content>
+  <content>Catalog.ВКМ_ФизическиеЛица</content>
+  <content>Document.ВКМ_НачислениеФиксированныхПремий</content>
 </mdclass:Subsystem>

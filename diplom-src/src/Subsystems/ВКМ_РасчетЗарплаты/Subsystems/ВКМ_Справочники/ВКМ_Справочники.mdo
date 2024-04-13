@@ -8,5 +8,6 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Catalog.ВКМ_ГрафикиРаботы</content>
+  <content>Catalog.ВКМ_ФизическиеЛица</content>
   <parentSubsystem>Subsystem.ВКМ_РасчетЗарплаты</parentSubsystem>
 </mdclass:Subsystem>
