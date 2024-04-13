@@ -25,4 +25,5 @@
   <content>DataProcessor.ВКМ_ЗаполнениеГрафика</content>
   <content>Catalog.ВКМ_ФизическиеЛица</content>
   <content>Document.ВКМ_НачислениеФиксированныхПремий</content>
+  <content>InformationRegister.ВКМ_УсловияОплатыСотрудников</content>
 </mdclass:Subsystem>
