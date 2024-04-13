@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:ChartOfCalculationTypes xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ed8ce2e-f59f-491c-8587-b48c5ae53bb1">
+<mdclass:ChartOfCalculationTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ed8ce2e-f59f-491c-8587-b48c5ae53bb1">
   <producedTypes>
     <objectType typeId="3d12721b-fe89-47fe-bc81-9a3e7ed25fd3" valueTypeId="4c609a8d-02b9-45ae-8ee5-1255471aa698"/>
     <refType typeId="ed33e671-9703-430f-aad0-908bf127b8e5" valueTypeId="54ac8ff8-fd48-41d8-9696-40628926e4a0"/>
@@ -35,4 +35,22 @@
   <dependenceOnCalculationTypes>OnActionPeriod</dependenceOnCalculationTypes>
   <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</baseCalculationTypes>
   <actionPeriodUse>true</actionPeriodUse>
+  <predefined>
+    <items id="3781f49f-b6fc-433d-96f1-9382daa5e7ee">
+      <name>Оклад</name>
+      <description>Оклад</description>
+      <code xsi:type="core:StringValue">
+        <value>1</value>
+      </code>
+      <displaced>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Отпуск</displaced>
+    </items>
+    <items id="dde187a0-52c4-4751-9224-8b55a9c83f32">
+      <name>Отпуск</name>
+      <description>Отпуск</description>
+      <code xsi:type="core:StringValue">
+        <value>2</value>
+      </code>
+      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Оклад</base>
+    </items>
+  </predefined>
 </mdclass:ChartOfCalculationTypes>

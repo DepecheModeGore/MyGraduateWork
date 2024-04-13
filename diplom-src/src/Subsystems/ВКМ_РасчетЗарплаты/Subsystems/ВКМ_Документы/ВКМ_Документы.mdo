@@ -8,5 +8,6 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Document.ВКМ_НачислениеФиксированныхПремий</content>
+  <content>Document.ВКМ_НачисленияЗарплаты</content>
   <parentSubsystem>Subsystem.ВКМ_РасчетЗарплаты</parentSubsystem>
 </mdclass:Subsystem>
