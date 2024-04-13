@@ -26,4 +26,5 @@
   <content>Catalog.ВКМ_ФизическиеЛица</content>
   <content>Document.ВКМ_НачислениеФиксированныхПремий</content>
   <content>InformationRegister.ВКМ_УсловияОплатыСотрудников</content>
+  <content>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы</content>
 </mdclass:Subsystem>
