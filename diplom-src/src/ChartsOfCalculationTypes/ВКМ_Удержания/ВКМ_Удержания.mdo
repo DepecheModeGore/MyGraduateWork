@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:ChartOfCalculationTypes xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ca556ded-8449-40a0-ac9b-1d9c3d164541">
+<mdclass:ChartOfCalculationTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ca556ded-8449-40a0-ac9b-1d9c3d164541">
   <producedTypes>
     <objectType typeId="7088b2a0-17a3-486f-bdaf-43f74b571caf" valueTypeId="20ae0c16-5ac7-48fc-88fd-299cc0213e6f"/>
     <refType typeId="9ef9afb0-85ff-4cdf-b307-905b1f74154b" valueTypeId="4318cfd2-bc67-40d7-b6a4-cfd4628292f3"/>
@@ -32,5 +32,19 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <dependenceOnCalculationTypes>OnActionPeriod</dependenceOnCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</baseCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</baseCalculationTypes>
   <actionPeriodUse>true</actionPeriodUse>
+  <predefined>
+    <items id="aca53016-9b50-4e6f-ad44-3410cdf3538c">
+      <name>НДФЛ</name>
+      <description>НДФЛ</description>
+      <code xsi:type="core:StringValue">
+        <value>1</value>
+      </code>
+      <base>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Оклад</base>
+      <base>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.ПроцентЗаВыпРаботы</base>
+    </items>
+  </predefined>
 </mdclass:ChartOfCalculationTypes>

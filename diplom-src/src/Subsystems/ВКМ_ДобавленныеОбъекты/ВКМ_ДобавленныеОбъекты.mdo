@@ -28,4 +28,6 @@
   <content>InformationRegister.ВКМ_УсловияОплатыСотрудников</content>
   <content>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы</content>
   <content>Document.ВКМ_НачисленияЗарплаты</content>
+  <content>CalculationRegister.ВКМ_ОсновныеНачисления</content>
+  <content>CalculationRegister.ВКМ_ДополнительныеНачисления</content>
 </mdclass:Subsystem>
