@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9a075790-5328-4e55-8863-8b1d529dc200">
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9a075790-5328-4e55-8863-8b1d529dc200">
   <producedTypes>
     <objectType typeId="2f2b093c-f107-417e-bfec-f75e17263df8" valueTypeId="dee8a774-196a-40e8-a02f-fb5bc09441eb"/>
     <refType typeId="a208ae3b-0f97-4114-8081-cebee003c5ba" valueTypeId="2187c0fb-e72f-43ef-bb0f-1dcba707a61c"/>
@@ -27,4 +27,47 @@
   <registerRecords>CalculationRegister.ВКМ_Удержания</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <tabularSections uuid="43b9dfa9-d23f-4516-9811-3080a9788b39">
+    <producedTypes>
+      <objectType typeId="70b9afc9-d52a-44ed-9fc2-97d107aa4211" valueTypeId="bfcd1b5e-459e-47b2-ae0b-e924ec9e8442"/>
+      <rowType typeId="1cc274c5-49e1-4496-9c22-6bcd5ee70ff3" valueTypeId="a101a011-7336-47db-a22c-c30f1379761f"/>
+    </producedTypes>
+    <name>СписокСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список сотрудников</value>
+    </synonym>
+    <attributes uuid="263727d0-9596-4678-8b86-e49d09d7487c">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВКМ_ФизическиеЛица</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c7e49c5a-28bf-4c1a-b95d-ca2b9441186a">
+      <name>СуммаПремии</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма премии</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
 </mdclass:Document>
