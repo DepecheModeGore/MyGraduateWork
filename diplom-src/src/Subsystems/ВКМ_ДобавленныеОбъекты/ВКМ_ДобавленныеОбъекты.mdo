@@ -30,4 +30,5 @@
   <content>Document.ВКМ_НачисленияЗарплаты</content>
   <content>CalculationRegister.ВКМ_ОсновныеНачисления</content>
   <content>CalculationRegister.ВКМ_ДополнительныеНачисления</content>
+  <content>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</content>
 </mdclass:Subsystem>
