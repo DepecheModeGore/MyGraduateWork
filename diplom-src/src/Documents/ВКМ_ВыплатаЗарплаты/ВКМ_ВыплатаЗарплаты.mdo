@@ -10,7 +10,7 @@
   <name>ВКМ_ВыплатаЗарплаты</name>
   <synonym>
     <key>ru</key>
-    <value>ВКМ выплата зарплаты</value>
+    <value>Выплата зарплаты</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Document.ВКМ_ВыплатаЗарплаты.StandardAttribute.Number</inputByString>
@@ -27,7 +27,7 @@
   <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
-  <forms uuid="0212f840-5281-41e4-a0c7-9c2aafc22997">
+  <forms uuid="2a126eec-654a-4bee-9fc7-ce33888dc91a">
     <name>ФормаДокумента</name>
     <synonym>
       <key>ru</key>
