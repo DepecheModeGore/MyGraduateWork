@@ -543,4 +543,25 @@
 			<value>true</value>
 		</right>
 	</object>
+	<object>
+		<name>Subsystem.ВКМ_РасчетЗарплаты.Subsystem.ВКМ_Справочники</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.ВКМ_РасчетЗарплаты</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.ВКМ_РасчетЗарплаты.Subsystem.ВКМ_Документы</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
 </Rights>
