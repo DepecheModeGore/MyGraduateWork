@@ -33,4 +33,5 @@
   <content>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</content>
   <content>Document.ВКМ_ВыплатаЗарплаты</content>
   <content>Document.ВКМ_ГрафикОтпусков</content>
+  <content>InformationRegister.ВКМ_КоличествоДнейОтпускаПоПлану</content>
 </mdclass:Subsystem>

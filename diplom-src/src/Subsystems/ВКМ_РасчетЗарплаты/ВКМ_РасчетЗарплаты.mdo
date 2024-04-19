@@ -13,6 +13,8 @@
   <content>InformationRegister.ВКМ_ГрафикиРаботы</content>
   <content>DataProcessor.ВКМ_ЗаполнениеГрафика</content>
   <content>InformationRegister.ВКМ_УсловияОплатыСотрудников</content>
+  <content>Report.ВКМ_РасчетыССотрудниками</content>
+  <content>Report.ВКМ_РасходЗапланированныхОтпусков</content>
   <subsystems>ВКМ_Справочники</subsystems>
   <subsystems>ВКМ_Документы</subsystems>
 </mdclass:Subsystem>
