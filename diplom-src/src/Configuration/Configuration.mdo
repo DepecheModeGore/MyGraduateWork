@@ -579,6 +579,7 @@
   <roles>Role.ВКМ_РаботаСДокументом_ВКМ_ОбслуживаниеКлиента</roles>
   <roles>Role.ВКМ_МассовоеСозданиеАктов</roles>
   <roles>Role.ВКМ_КадровикРасчетчик</roles>
+  <roles>Role.ВКМ_ДоступКОтчетуВыработкаСотрудников</roles>
   <commonTemplates>CommonTemplate.ДанныеПечатиОбщиеРеквизиты</commonTemplates>
   <commonTemplates>CommonTemplate.ДанныеПечатиРегистрСимволов</commonTemplates>
   <commonTemplates>CommonTemplate.ИнструкцияПоСозданиюФаксимильнойПодписиИПечати</commonTemplates>

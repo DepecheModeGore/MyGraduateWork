@@ -15,6 +15,7 @@
   <content>InformationRegister.ВКМ_УсловияОплатыСотрудников</content>
   <content>Report.ВКМ_РасчетыССотрудниками</content>
   <content>Report.ВКМ_РасходЗапланированныхОтпусков</content>
+  <content>Report.ВКМ_ВыработкаСпециалистов</content>
   <subsystems>ВКМ_Справочники</subsystems>
   <subsystems>ВКМ_Документы</subsystems>
 </mdclass:Subsystem>
