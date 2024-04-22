@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="31821b7a-fa47-4b13-8af6-64e26b497419">
+  <producedTypes>
+    <objectType typeId="85a6e184-99bc-4a63-879e-ea6ece4897e8" valueTypeId="d51107b0-4b1e-4faa-b16c-c18ac9d54674"/>
+    <refType typeId="73488f8e-7ee6-4c9d-adf9-c7514d678157" valueTypeId="848bfb57-627d-4ee8-abb7-4837c5fcc7b5"/>
+    <selectionType typeId="1b8bb860-8b07-4563-84b7-9b39db143013" valueTypeId="3e897303-0ede-44cf-b1c3-024b2437ee5c"/>
+    <listType typeId="ae8f81a5-c9d3-49ef-93a1-0a1ecfb56fbe" valueTypeId="29a6ce42-bbd2-4252-b549-6e730ddde05a"/>
+    <managerType typeId="82a8f1fb-bba0-447c-ae3c-b4c1a10fab30" valueTypeId="f9704135-d9f2-4b20-ab8d-a1697453b654"/>
+  </producedTypes>
+  <name>ВКМ_УведомленияТелеграмБоту</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уведомления телеграм - боту</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВКМ_УведомленияТелеграмБоту.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ВКМ_УведомленияТелеграмБоту.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="b898a298-5e11-48c1-95db-a67f968ba3d3">
+    <name>ТекстСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст сообщения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

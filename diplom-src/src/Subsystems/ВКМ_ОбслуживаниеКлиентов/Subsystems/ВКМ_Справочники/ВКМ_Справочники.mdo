@@ -8,5 +8,6 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>Catalog.ДоговорыКонтрагентов</content>
+  <content>Catalog.ВКМ_УведомленияТелеграмБоту</content>
   <parentSubsystem>Subsystem.ВКМ_ОбслуживаниеКлиентов</parentSubsystem>
 </mdclass:Subsystem>
