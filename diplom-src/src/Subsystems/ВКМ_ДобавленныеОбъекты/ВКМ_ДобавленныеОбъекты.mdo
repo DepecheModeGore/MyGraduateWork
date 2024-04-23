@@ -35,4 +35,5 @@
   <content>Document.ВКМ_ГрафикОтпусков</content>
   <content>InformationRegister.ВКМ_КоличествоДнейОтпускаПоПлану</content>
   <content>Catalog.ВКМ_УведомленияТелеграмБоту</content>
+  <content>CommonModule.ВКМ_Телеграм</content>
 </mdclass:Subsystem>
