@@ -36,4 +36,5 @@
   <content>InformationRegister.ВКМ_КоличествоДнейОтпускаПоПлану</content>
   <content>Catalog.ВКМ_УведомленияТелеграмБоту</content>
   <content>CommonModule.ВКМ_Телеграм</content>
+  <content>ScheduledJob.ВКМ_ОтправкаУведомленийТелеграмБоту</content>
 </mdclass:Subsystem>
