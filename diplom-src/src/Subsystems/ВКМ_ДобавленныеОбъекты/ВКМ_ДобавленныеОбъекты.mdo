@@ -37,4 +37,5 @@
   <content>Catalog.ВКМ_УведомленияТелеграмБоту</content>
   <content>CommonModule.ВКМ_Телеграм</content>
   <content>ScheduledJob.ВКМ_ОтправкаУведомленийТелеграмБоту</content>
+  <content>CommonModule.ВКМ_РаботаСФормами</content>
 </mdclass:Subsystem>
