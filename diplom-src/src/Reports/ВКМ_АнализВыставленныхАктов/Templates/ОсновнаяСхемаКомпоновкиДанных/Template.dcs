@@ -7,6 +7,16 @@
 	<dataSet xsi:type="DataSetQuery">
 		<name>НаборДанных1</name>
 		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
 			<dataPath>Клиент</dataPath>
 			<field>Клиент</field>
 			<role>
@@ -35,14 +45,18 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаКОплате</dataPath>
-			<field>СуммаКОплате</field>
+			<dataPath>СуммаКОплате_ОбслуживаниеКлиента</dataPath>
+			<field>СуммаКОплате_ОбслуживаниеКлиента</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма к оплате</v8:content>
+					<v8:content>Сумма к оплате обслуживание клиента</v8:content>
 				</v8:item>
 			</title>
+			<role>
+				<dcscom:periodNumber>2</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ФактСуммаПоНоменклатуре</dataPath>
@@ -55,31 +69,48 @@
 			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Номенклатура</dataPath>
-			<field>Номенклатура</field>
+			<dataPath>СуммаКОплате_РеализацияТоваровУслуг</dataPath>
+			<field>СуммаКОплате_РеализацияТоваровУслуг</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Номенклатура</v8:content>
+					<v8:content>Сумма к оплате реализация товаров услуг</v8:content>
 				</v8:item>
 			</title>
+			<role>
+				<dcscom:periodNumber>3</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	ВКМ_ВыполненныеКлиентуРаботыОстаткиИОбороты.Клиент,
-	ВКМ_ВыполненныеКлиентуРаботыОстаткиИОбороты.Договор,
-	ВКМ_ВыполненныеКлиентуРаботыОстаткиИОбороты.Регистратор КАК Документ,
-	ВКМ_ВыполненныеКлиентуРаботыОстаткиИОбороты.СуммаКОплатеПриход КАК СуммаКОплате,
-	ВКМ_ВыполненныеКлиентуРаботыОстаткиИОбороты.Договор.ВКМ_АбонентскаяПлата КАК ФактСуммаПоНоменклатуре,
-	ВКМ_НоменклатураРаботыСпециалиста.Значение КАК Номенклатура
+	ВКМ_ВыполненныеКлиентуРаботыОбороты.Клиент,
+	ВКМ_ВыполненныеКлиентуРаботыОбороты.Договор,
+	ВКМ_ВыполненныеКлиентуРаботыОбороты.Регистратор КАК Документ,
+	ВЫБОР
+		КОГДА ВКМ_ВыполненныеКлиентуРаботыОбороты.Регистратор ССЫЛКА Документ.ВКМ_ОбслуживаниеКлиента
+			ТОГДА ВКМ_ВыполненныеКлиентуРаботыОбороты.СуммаКОплатеОборот
+		ИНАЧЕ 0
+	КОНЕЦ КАК СуммаКОплате_ОбслуживаниеКлиента,
+	ВКМ_ВыполненныеКлиентуРаботыОбороты.Договор.ВКМ_АбонентскаяПлата КАК ФактСуммаПоНоменклатуре,
+	ВКМ_НоменклатураРаботыСпециалиста.Значение КАК Номенклатура,
+	ВЫБОР
+		КОГДА ВКМ_ВыполненныеКлиентуРаботыОбороты.Регистратор ССЫЛКА Документ.РеализацияТоваровУслуг
+			ТОГДА ВКМ_ВыполненныеКлиентуРаботыОбороты.СуммаКОплатеОборот
+		ИНАЧЕ 0
+	КОНЕЦ КАК СуммаКОплате_РеализацияТоваровУслуг
 ИЗ
-	РегистрНакопления.ВКМ_ВыполненныеКлиентуРаботы.ОстаткиИОбороты(&amp;НачалоПериода, &amp;КонецПериода, Регистратор,,) КАК
-		ВКМ_ВыполненныеКлиентуРаботыОстаткиИОбороты,
+	РегистрНакопления.ВКМ_ВыполненныеКлиентуРаботы.Обороты(&amp;НачалоПериода, &amp;КонецПериода, Регистратор,) КАК
+		ВКМ_ВыполненныеКлиентуРаботыОбороты,
 	Константа.ВКМ_НоменклатураРаботыСпециалиста КАК ВКМ_НоменклатураРаботыСпециалиста</query>
 	</dataSet>
 	<totalField>
-		<dataPath>СуммаКОплате</dataPath>
-		<expression>Сумма(СуммаКОплате)</expression>
+		<dataPath>СуммаКОплате_ОбслуживаниеКлиента</dataPath>
+		<expression>Сумма(СуммаКОплате_ОбслуживаниеКлиента)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаКОплате_РеализацияТоваровУслуг</dataPath>
+		<expression>Сумма(СуммаКОплате_РеализацияТоваровУслуг)</expression>
 	</totalField>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -140,22 +171,10 @@
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Клиент</dcsset:field>
+					<dcsset:field>СуммаКОплате_ОбслуживаниеКлиента</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Договор</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Документ</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаКОплате</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Номенклатура</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ФактСуммаПоНоменклатуре</dcsset:field>
+					<dcsset:field>СуммаКОплате_РеализацияТоваровУслуг</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:dataParameters>
@@ -181,12 +200,49 @@
 				</dcscor:item>
 			</dcsset:outputParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Клиент</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+					</dcsset:item>
+				</dcsset:groupItems>
 				<dcsset:order>
 					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 				</dcsset:order>
 				<dcsset:selection>
 					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Договор</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Документ</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
 			</dcsset:item>
 		</dcsset:settings>
 	</settingsVariant>
