@@ -19,6 +19,7 @@
 			<field>Год</field>
 			<appearance>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>Формат</dcscor:parameter>
 					<dcscor:value xsi:type="v8:LocalStringType">
 						<v8:item>
@@ -102,13 +103,10 @@
 			</dcsset:selection>
 			<dcsset:filter>
 				<dcsset:item xsi:type="dcsset:FilterItemComparison">
-					<dcsset:use>false</dcsset:use>
-					<dcsset:left xsi:type="dcscor:Field">Год</dcsset:left>
+					<dcsset:left xsi:type="dcscor:Field">Год.ЧастиДат.Год</dcsset:left>
 					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:right xsi:type="v8:StandardBeginningDate">
-						<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
-					</dcsset:right>
-					<dcsset:userSettingID>148b00c2-00e9-42b9-ae57-a013478cfa17</dcsset:userSettingID>
+					<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					<dcsset:userSettingID>82a905cc-4493-4905-85ab-1257db1403cd</dcsset:userSettingID>
 				</dcsset:item>
 			</dcsset:filter>
 			<dcsset:outputParameters>
