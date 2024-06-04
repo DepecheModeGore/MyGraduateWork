@@ -44,25 +44,21 @@
 		<query>ВЫБРАТЬ
 	ВКМ_КоличествоДнейОтпускаПоПлану.Сотрудник КАК Сотрудник,
 	ВКМ_КоличествоДнейОтпускаПоПлану.КоличествоДней КАК План,
-	ВКМ_КоличествоДнейОтпускаПоПлану.Период КАК Год
-ПОМЕСТИТЬ ВТ_ОтпускПлан
+	ВКМ_КоличествоДнейОтпускаПоПлану.Период КАК Год,
+	NULL КАК Факт
 ИЗ
 	РегистрСведений.ВКМ_КоличествоДнейОтпускаПоПлану КАК ВКМ_КоличествоДнейОтпускаПоПлану
-;
 
-////////////////////////////////////////////////////////////////////////////////
+ОБЪЕДИНИТЬ ВСЕ
+
 ВЫБРАТЬ
-	ВТ_ОтпускПлан.Сотрудник КАК Сотрудник,
-	ВТ_ОтпускПлан.План КАК План,
-	ВКМ_ОсновныеНачисленияФактическийПериодДействия.КоличествоДней КАК Факт,
-	ВТ_ОтпускПлан.Год КАК Год
+	ВКМ_ОсновныеНачисленияФактическийПериодДействия.Сотрудник,
+	NULL,
+	ВКМ_ОсновныеНачисленияФактическийПериодДействия.ПериодДействия,
+	ВКМ_ОсновныеНачисленияФактическийПериодДействия.КоличествоДней
 ИЗ
-	ВТ_ОтпускПлан КАК ВТ_ОтпускПлан
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ВКМ_ОсновныеНачисления.ФактическийПериодДействия(ВидРасчета = &amp;Отпуск) КАК
-			ВКМ_ОсновныеНачисленияФактическийПериодДействия
-		ПО ВТ_ОтпускПлан.Сотрудник = ВКМ_ОсновныеНачисленияФактическийПериодДействия.Сотрудник
-		И (НАЧАЛОПЕРИОДА(ВТ_ОтпускПлан.Год,
-			ГОД) = НАЧАЛОПЕРИОДА(ВКМ_ОсновныеНачисленияФактическийПериодДействия.ПериодДействия, ГОД))</query>
+	РегистрРасчета.ВКМ_ОсновныеНачисления.ФактическийПериодДействия(ВидРасчета = &amp;Отпуск) КАК
+		ВКМ_ОсновныеНачисленияФактическийПериодДействия</query>
 	</dataSet>
 	<parameter>
 		<name>Отпуск</name>
@@ -128,12 +124,27 @@
 				</dcscor:item>
 			</dcsset:outputParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Сотрудник</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+					</dcsset:item>
+				</dcsset:groupItems>
 				<dcsset:order>
 					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
 				</dcsset:order>
 				<dcsset:selection>
 					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
 			</dcsset:item>
 		</dcsset:settings>
 	</settingsVariant>
